@@ -508,7 +508,10 @@ export class ApiClient {
     collections: CollectionWithSets[]
   }> {
     return await this.http
-      .get<{ total: number; collections: CollectionWithSets[] }>('collections')
+      .get<{ total: number; collections: CollectionWithSets[] }>(
+        'collections',
+        { params: { languages_code: 'en-US', label: 'English' } }
+      )
       .then((response) => response.data)
   }
 

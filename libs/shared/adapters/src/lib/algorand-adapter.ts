@@ -52,11 +52,7 @@ export class AlgorandAdapter {
     logger: pino.Logger<unknown>
   ) {
     this.logger = logger.child({ context: this.constructor.name })
-    this.algod = new algosdk.Algodv2(
-      { 'X-Algo-API-Token': options.algodToken },
-      options.algodServer,
-      options.algodPort
-    )
+    this.algod = new algosdk.Algodv2('', options.algodServer, '')
 
     this.fundingAccount = algosdk.mnemonicToSecretKey(options.fundingMnemonic)
     this.logger.info('Using funding account %s', this.fundingAccount.addr)
