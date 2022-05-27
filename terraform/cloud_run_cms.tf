@@ -162,7 +162,6 @@ resource "google_cloud_run_domain_mapping" "cms" {
 
   spec {
     route_name = google_cloud_run_service.cms.name
-    force_override = true
   }
 }
 

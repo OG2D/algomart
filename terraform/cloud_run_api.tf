@@ -198,7 +198,6 @@ resource "google_cloud_run_domain_mapping" "api" {
 
   spec {
     route_name = google_cloud_run_service.api.name
-    force_override = true
   }
 }
 

@@ -78,7 +78,6 @@ resource "google_cloud_run_domain_mapping" "web" {
 
   spec {
     route_name = google_cloud_run_service.web.name
-    force_override = true
   }
 }
 
