@@ -4,7 +4,7 @@ resource "google_sql_database_instance" "database_server" {
   region           = var.region
 
   lifecycle {
-    prevent_destroy = false
+    prevent_destroy = true
   }
 
   settings {
