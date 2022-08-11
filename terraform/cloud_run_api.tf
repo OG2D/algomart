@@ -191,7 +191,7 @@ resource "google_cloud_run_service" "api" {
 resource "google_cloud_run_domain_mapping" "api" {
   location = var.region
   name     = var.api_domain_mapping
-  forceOverride = true
+  force_override = true
   metadata {
     namespace = var.project
   }
