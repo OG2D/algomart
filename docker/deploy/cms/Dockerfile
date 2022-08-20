@@ -6,4 +6,3 @@ COPY ./apps/cms .
 COPY ./docker/deploy/cms/run.sh .
 
 CMD ["./run.sh"]
-RUN npm run seed-prod
