@@ -108,7 +108,7 @@ services:
     environment:
       # only put values in here that should override the Web .env file
       API_URL: http://api-deploy:3001
-      IMAGE_DOMAINS: lh3.googleusercontent.com,firebasestorage.googleapis.com,localhost,cms-deploy
+      IMAGE_DOMAINS: lh3.googleusercontent.com,firebasestorage.googleapis.com,localhost,cms-deploy,storage.googleapis.com
       PORT: 3000
       NODE_ENV: production
       LOG_LEVEL: warn
