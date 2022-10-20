@@ -341,7 +341,7 @@ variable "web_revision_name" {
 ##
 
 variable "public_outbound_ip_name" {
-  default   = "algomart-public-outbound-ip"
+  default   = "og2d-algomart-public-outbound-ip"
   sensitive = true
 }
 
