@@ -63,7 +63,7 @@ variable "private_ip_name" {
 }
 
 variable "vpc_name" {
-  default   = "algomart-vpc"
+  default   = "og2d-algomart-vpc"
   sensitive = true
 }
 
