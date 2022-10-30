@@ -63,7 +63,7 @@ variable "private_ip_name" {
 }
 
 variable "vpc_name" {
-  default   = "og2d-algomart-vpc"
+  default   = "algomart-vpc"
   sensitive = true
 }
 
@@ -341,7 +341,7 @@ variable "web_revision_name" {
 ##
 
 variable "public_outbound_ip_name" {
-  default   = "og2d-algomart-public-outbound-ip"
+  default   = "algomart-public-outbound-ip"
   sensitive = true
 }
 
