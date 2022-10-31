@@ -100,7 +100,7 @@ jobs:
           TF_VAR_api_revision_name: algomart-api-terraform-${{ needs.tag.outputs.value }}
           TF_VAR_scribe_revision_name: algomart-scribe-terraform-${{ needs.tag.outputs.value }}
           TF_VAR_cms_revision_name: algomart-cms-terraform-${{ needs.tag.outputs.value }}
-          TF_VAR_web_revision_name: algomart-web-terraform-${{ needs.tag.outputs.value }}
+          TF_VAR_web_revision_name: og2d-algomart-web-terraform-${{ needs.tag.outputs.value }}
 
           # Required
           TF_VAR_project: ${{ secrets.GCP_PROJECT_ID }}
